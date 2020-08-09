@@ -1,0 +1,285 @@
+html, body{
+  height: 100;
+}
+
+.container {
+  justify-content: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+}
+
+.gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.gallery__item--4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 14;
+}
+
+.gallery__item--6 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 10;
+  grid-row-end: 14;
+}
+
+.index, .about, .contact {
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/vanessaf.jpeg');
+
+  font-family: 'Antic', sans-serif;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Lato', sans-serif;
+
+  color: black;
+}
+
+.work {
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+
+  font-family: 'Antic', sans-serif;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Lato', sans-serif;
+
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration:none;
+}
+
+/*header styles*/
+header h1 {
+  font-size: 32px;
+  margin: 15px;
+}
+
+nav {
+  float: right;
+  padding: 5px 0px;
+  margin: 20px;
+
+}
+
+li {
+   display: inline;
+   margin-right: 20px;
+   }
+
+.aboutdes{
+  float:left;
+  background-color: white;
+  width: 200px;
+  border: 0px;
+  padding: 10px;
+  margin: 10px 40px;
+}
+
+.description {
+  float:right;
+  background-color: white;
+  width: 400px;
+  border: 0px;
+  padding: 30px;
+  margin: 10px 80px;
+}
+
+.workdescription{
+  float:right;
+  background-color: white;
+  width: 700px;
+  border: 0px;
+  padding: 80px;
+  margin: 10px 10px;
+}
+
+.indescription{
+  float:right;
+  background-color: white;
+  padding: 10px;
+  width:600px;
+  margin: -300px -40px;
+}
+
+div {
+  background-color: white;
+  width: 1100px;
+  border: 0px;
+  padding: 60px;
+  margin: 50px 70px;
+}
+
+.girl {
+  margin: 10px ;
+  width: 40%;
+  height: 40%;
+}
+
+.vanessa {
+  margin: 10px ;
+  width: 40%;
+  height: 40%;
+  /*any element with the class of 'profile-img'*/
+}
+
+.vanessalogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+}
+
+.vanessalogo1 {
+  position:absolute;
+  left:0;
+  top:0;
+  width:10%;
+  padding:10px;
+}
+
+.motherearth {
+  width: 40%;
+  height: 40%;
+  margin: 0px;
+  padding: 130px;
+}
+
+.subway1 {
+  width: 40%;
+  height: 40%;
+  margin: 0px;
+  padding: 130px;
+}
+
+.ontarioandwellesley {
+  width: 40%;
+  height: 40%;
+  margin: 0px;
+  padding: 130px;
+}
+
+.hopestreet {
+  width: 40%;
+  height: 40%;
+  margin: 0px;
+  padding: 130px;
+}
+
+.wellesley2602 {
+  width: 40%;
+  height: 40%;
+  margin: 0px;
+  padding: 130px;
+}
+
+.fil {
+  width: 40%;
+  height: 40%;
+  margin: 0px;
+  padding: 130px;
+}
+
+blockquote {
+  clear: both;
+}
+
+/* CONTACT STYLES
+ -----------------------------------------*/
+ form {
+   width: 400px;
+ }
+ input,
+ textarea {
+   border: 1px solid red;
+   width: 400px;
+   margin-bottom: 10px;
+ }
+ input {
+   height: 20px;
+ }
+ textarea {
+   height: 100px;
+ }
+ button {
+   background: red;
+   border: none;
+   padding: 10px 40px;
+   font-size: 16px;
+ }
+
+ /* FOOTER STYLES
+ -----------------------------------------*/
+ /* Sticky Footer - http://css-tricks.com/snippets/css/sticky-footer */
+ .page-wrap {
+   min-height: 100%;
+   margin-bottom: -55px; /* must be the same height as footer */
+ }
+ .page-wrap:after {
+   content: "";
+   display: block;
+ }
+ footer,
+ .page-wrap:after {
+   opacity: 30%;
+   height: 50px; /* however tall you want the footer to be */
+ }
+
+ footer {
+    background: black;
+    text-align: center;
+    padding: 0.25px;
+    color: white;
+  }
